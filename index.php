@@ -1,8 +1,11 @@
 <?php
     require __DIR__ . '/vendor/autoload.php';
 
+    use j4mie\idiorm\idiorm;
     use Respect\Validation\Validator as v;
-    include_once('view/index.php');
+    include_once ('includes/connection.php');
+    include_once ('includes/addUser.php');
+    include_once('view/index.php');        
 
     $msg = '';
 
@@ -68,6 +71,7 @@
 
     if ($valid) {
         echo "<div class='message'>All ok</div>";
+        addUser($username, $email, $first_name, $password);
     } else {
         echo "<div class='message'>All not ok</div>";
     }
