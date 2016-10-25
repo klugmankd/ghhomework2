@@ -20,7 +20,7 @@
             $valid = TRUE;
         }
         else {
-            echo $msg = "<div class='message'>Wrong name or empty name</div>";
+            echo $msg = "<div class='message'>Wrong username or empty</div>";
             $valid = FALSE;
         }
     }

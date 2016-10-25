@@ -8,5 +8,5 @@
         $user->password = $password;
 
         $user->save();
-        echo "<div class='message'>User added successfully</div>";
+        header("Location: view/welcome.php");
     }
