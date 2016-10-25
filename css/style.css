@@ -11,7 +11,7 @@ body {
     background-color: #f9f9f9;
 }
 
-#wrapper {
+#wrapper, .message {
     margin: 3% auto;
     padding: 1%;
     text-align: center;
@@ -34,6 +34,7 @@ body {
     border: 1px solid silver;
     outline: none;
     margin-bottom: 15px;
+    color: #999999;
 }
 
 #wrapper .field:focus {
@@ -66,5 +67,11 @@ body {
     -o-transition: all.6s ease;
     -ms-transition: all.6s ease;
     transition: all.6s ease;
+}
+
+.message {
+    color: #999999;
+    font-size: 1.4em;
+    font-weight: 100;
 }
 
