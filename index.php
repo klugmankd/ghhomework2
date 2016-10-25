@@ -14,8 +14,8 @@
     $passwordValidator = v::alnum()->noWhitespace()->length(8, 64);
 
 
-    if (isset($_GET['username'])) {
-        $username = $_GET['username'];
+    if (isset($_POST['username'])) {
+        $username = $_POST['username'];
         if ($usernameValidator->validate($username)) {
             $valid = TRUE;
         }
@@ -25,8 +25,8 @@
         }
     }
 
-    if (isset($_GET['email'])) {
-        $email = $_GET['email'];
+    if (isset($_POST['email'])) {
+        $email = $_POST['email'];
         if (v::email()->validate($email)) {
             $valid = TRUE;
         }
@@ -36,8 +36,8 @@
         }
     }
 
-    if (isset($_GET['firstName'])) {
-        $first_name = $_GET['firstName'];
+    if (isset($_POST['firstName'])) {
+        $first_name = $_POST['firstName'];
         if ($firstNameValidator->validate($first_name)) {
             $valid = TRUE;
         }
@@ -47,8 +47,8 @@
         }
     }
 
-    if (isset($_GET['password'])) {
-        $password = $_GET['password'];
+    if (isset($_POST['password'])) {
+        $password = $_POST['password'];
         if ($passwordValidator->validate($password)) {
             $valid = TRUE;
         }
@@ -58,8 +58,8 @@
         }
     }
 
-    if (isset($_GET['confirm'])) {
-        $confirm = $_GET['confirm'];
+    if (isset($_POST['confirm'])) {
+        $confirm = $_POST['confirm'];
         if ($passwordValidator->validate($confirm)) {
             $valid = TRUE;
         }

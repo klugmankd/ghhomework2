@@ -8,7 +8,8 @@
 
 body {
     background-image: url("http://www.wallpapereast.com/static/images/1952774_gP0ftIm.jpg");
-    background-color: #f9f9f9;
+    background-attachment: fixed;
+    /*background-color: #f9f9f9;*/
 }
 
 #wrapper, .message {
@@ -18,6 +19,7 @@ body {
     width: 53%;
     background-color: rgba(227, 227, 227, 0.27);
     border-radius: 10px;
+    z-index: 228;
 }
 
 #wrapper h2 {

@@ -10,7 +10,7 @@
         <h2>
             Registration form<hr>
         </h2>
-        <form method="get">
+        <form method="POST">
             <input type="text" name="username" class="field transition" placeholder="username">
             <input type="text" name="email" class="field transition" placeholder="email">
             <input type="text" name="firstName" class="field transition" placeholder="first name">
@@ -19,5 +19,6 @@
             <input type="submit" name="submit" id="button" class="transition" value="Sign up">
         </form>
     </div>
+
 </body>
 </html>
